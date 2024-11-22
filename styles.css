@@ -1,0 +1,886 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/* Megan Vega */
+
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+
+v2.0 | 20110126 
+
+License: none (public domain) 
+
+*/ 
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video { 
+margin: 0; 
+padding: 0; 
+border: 0; 
+font-size: 100%; 
+font: inherit; 
+vertical-align: baseline; 
+} 
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section { 
+display: block; 
+} 
+body { 
+line-height: 1; 
+} 
+ol, ul { 
+list-style: none; 
+} 
+blockquote, q { 
+quotes: none; 
+} 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+content: ''; 
+content: none; 
+} 
+table { 
+border-collapse: collapse; 
+border-spacing: 0; 
+} 
+
+ 
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+font-family:'Inter', sans-serif;
+    --Teal :#4CA7C0;
+    --Purple: #484FB7;
+    --Lavender: #6B8FE7;
+    --Yellow: #E9BB57; 
+    --Pink:#D9526F;
+    --Dark-gray:#1E1E1E; 
+    --White:#ffffff; 
+
+}
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+body{
+    min-width:450px;
+    max-width:1300px;
+    background-color:#484FB7; 
+}
+main{
+    background-color: #484FB7;
+}
+header h1{
+    background-color:#6B8FE7;
+    color:#ffffff;
+    font-family:'kavoon';
+    Text-align:center;
+    font-size:3em;
+    padding:50px;
+    position:relative;
+    bottom:15px;
+    border-radius:25px; 
+    z-index:2;
+}
+header p{
+    background-color:#D9526F;
+    color:#ffffff;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    position:relative;
+    bottom:28px;
+    font-style:italic;
+    z-index:1;
+}
+h2{
+    font-size:2em;
+    color:#ffffff;
+    font-family:'kavoon';
+    position:relative;
+    bottom:20px;
+    left:5px;
+}
+h3{
+    font-size:1.5em;
+    color:#E9BB57;
+    font-weight: bold;
+    position:relative;
+    left:10px;
+}
+h4 {
+    color:#484FB7;
+    font-weight:bold;
+}
+nav h2{
+    visibility:hidden;
+    font-size:1.5em;
+}
+.menu{
+    background-color:#E9BB57;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#1E1E1E;
+    margin:5px;
+    border-radius:7px;
+    padding:10px;
+    font-size:1.2em;
+    width:20%;
+    position:fixed;
+    bottom:640px;
+    left:365px;
+    z-index:3;
+    text-align:center;
+}
+#services{
+    position:relative;
+    bottom:100px;
+    left:100px;
+    z-index:2;
+    text-align:center;
+    visibility: hidden;
+}
+#chooseus{
+    position:relative;
+    bottom:100px;
+    left:100px;
+    z-index:2;
+    text-align:center;
+    visibility:hidden;
+}
+#prices{
+    position:relative;
+    bottom:100px;
+    left:100px;
+    z-index:4;
+    text-align:center;
+    visibility:hidden;
+}
+#take{
+    position:relative;
+    bottom:100px;
+    left:100px;
+    z-index:4;
+    text-align:center;
+    visibility:hidden;
+}
+img {
+    padding:20px;
+   
+}
+ article{
+    background-color:#ffffff;
+    margin:15px;
+    padding:15px;
+    border-radius:15px;
+ }
+article p{
+    color:#1E1E1E; 
+}
+section .why{
+    color:#ffffff;
+    background-color:#D9526F;
+}
+#why{
+    background-color:#D9526F;
+    font-weight:bold;
+     height:400px;
+    position:relative;
+    top:2px;
+    
+}
+#why h2{
+    position:relative;
+    bottom:0px;
+    left:5px;
+    top:20px;
+}
+#personalized{
+    background-color:#4CA7C0;
+    width:100px;
+    padding:50px;
+    border-radius:10px;
+    position:relative;
+    left:20px;
+    top:41px;
+}
+#proven {
+    background-color:#6B8FE7;
+    text-align:center;
+    width:100px;
+    padding:50px;
+    border-radius:10px;
+    position:relative;
+    left:250px;
+    bottom:90px;
+}
+
+#supportive{
+    background-color:#E9BB57;
+    text-align:center;
+    width:100px;
+    padding:50px;
+    border-radius:10px;
+    position:relative;
+    bottom:70px;
+    left:20px;
+}
+#flexible {
+    background-color:#ffffff;
+    text-align:center;
+    width:100px;
+    padding:50px;
+    border-radius:10px;
+    position:relative;
+    bottom:200px;
+    left:250px;
+}
+
+#pricing{
+    background-color:#484FB7;
+    position:relative;
+    padding:10px;
+    bottom:0px;
+}
+td{
+    background-color:#ffffff;
+    padding:10px;
+    
+}
+
+ th {
+    background-color:#E9BB57;
+    padding:10px; 
+}
+
+footer{
+    background-color:#6B8FE7;
+    padding:35px;
+    border-radius:25px;
+    position:relative;
+    bottom:20px;
+    color:#ffffff;
+    position:relative; 
+    z-index:1;
+    text-align:center;
+    font-size:.8em;
+}
+#firststep {
+    background-color: #D9526F;
+    padding:40px;
+    line-height:30px;
+    color:#ffffff;
+    position:relative;
+    z-index:2
+    
+}
+#firststep h2{
+    position:relative;
+    bottom:10px;
+    text-align:center;
+}
+ #button{
+    background-color:#ffffff;
+    padding:10px 70px 10px 70px;
+    position:relative;
+    left:80px;
+    top:20px;
+    border-radius:10px;
+    font-weight:bold; 
+    box-shadow: 3px 3px;
+    border-color: #ffffff; 
+ }
+ table {
+    padding:90px 50px;
+    margin:20px;
+    position:relative;
+    left:120px;
+    
+ }
+ table, th, td{
+    border:1px solid;
+    border-color:#E9BB57;
+ }
+ #copyright{
+    position:relative;
+    right:30px;
+ }
+ #terms{
+    position:relative;
+    left:30px;
+ }
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width:620px){
+
+ main{
+    margin:0;
+ }
+   .menu {
+    position:fixed;
+    right:0;
+    left:auto;
+   }
+
+    .table1{
+        position:relative;
+        left:auto;
+        right:-30px;
+        top:10px;
+    }
+    .table2{
+        position:relative;
+        right:-350px;
+        left:auto;
+        bottom:203px;
+    }
+    .table3{
+        position:relative;
+        left:auto;
+        right:-30px;
+        bottom:150px;
+    }
+    .table4{
+        position:relative;
+        right:-350px;
+        left:auto;
+        bottom:325px;
+        
+    }
+    #firststep h2 {
+        text-align:left;
+
+    }
+    #firststep p{
+        text-align:left;
+        max-width:300px;
+    }
+    #button{
+        position:relative;
+        left:300px;
+        bottom:auto;
+        top:-200px;  
+    }
+    #proven{
+        position:relative;
+       bottom:auto;
+       top:-90px;
+       left:auto;
+       right:-230px;
+    }
+    #supportive {
+        position:relative;
+        top:-223px;
+        bottom:auto;
+        left:440px;
+    }
+    #flexible{
+        position:relative;
+        position:relative;
+        top:-354px;
+        bottom:auto;
+        left:650px;
+    }
+    .one-on-one{
+        width:300px;
+        line-height:25px;
+    }
+    .personaldevelopment{
+        position:relative;
+    }
+    .careercoaching{
+        position:relative;
+        bottom:auto;
+        top:-441px;
+        right:-300px;
+        width:250px;
+        height:399px;
+    }
+    .relationshipC{
+    Width:565px;
+    position:relative;
+    bottom:0;
+    top:-430px;
+    line-height:25px;
+    }
+    .community{
+        position:relative;
+        bottom:auto;
+        top:-390px;
+        right:-310px;
+        width:250px;
+        height:399px;
+        line-height:25px;;
+    }
+    .group-coaching{
+        position:relative;
+        bottom:0;
+        top:-400px;
+    }
+    .focusedsession {
+        position:relative;
+        bottom:auto;
+        top:-835px;
+        left:0px;
+        width:250px;
+        height:399px;
+        line-height:25px;
+    }
+    .workshops{
+        position:relative;
+        bottom:0;
+        top:-800px;
+    }
+    .interactive{
+       
+        width:580px;
+        height:300px;
+        position:relative;
+        bottom:0;
+        top:-790px;
+        line-height:25px;
+    }
+    .onlineCourses{
+        position:relative;
+        bottom:0;
+        top:-770px;
+        
+    }
+    .flexiblelearning{
+        Width:580px;
+        height:300px;
+        position:relative;
+        bottom:0;
+        top:-760px;
+        line-height:25px;
+    }
+    #why{
+        height:300px;
+        }
+    }
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width:950px){
+    
+    #services{
+        position:relative;
+        bottom:100px;
+        left:100px;
+        z-index:2;
+        text-align:center;
+        visibility:visible;
+    }
+    #chooseus{
+        position:relative;
+        bottom:100px;
+        left:100px;
+        z-index:2;
+        text-align:center;
+        visibility:visible;
+    }
+    #prices{
+        position:relative;
+        bottom:100px;
+        left:100px;
+        z-index:4;
+        text-align:center;
+        visibility:visible;
+    }
+    #take{
+        position:relative;
+        bottom:100px;
+        left:100px;
+        z-index:4;
+        text-align:center;
+        visibility:visible;
+    
+    }
+    #topnav li{
+        background-color:#E9BB57;
+        text-transform:uppercase;
+        font-weight:bold;
+        color:#1E1E1E;
+        margin:-10px;
+        border-radius:7px;
+        padding:15px;
+        font-size:1em;
+        display:inline;
+        position:relative;
+        bottom:215px;
+        left:auto;
+        right:-330px;    
+    }
+    .menu{
+        visibility:hidden;
+    }
+    .personaldevelopment{
+        position:relative;
+    }
+    .careercoaching{
+        position:relative;
+        top:15px;
+        left:0px;
+        height:300px;
+    }
+    .relationshipC{
+    Width:250px;
+    height:350px;
+    position:relative;
+    bottom:0;
+    top:25px;
+    line-height:25px;
+    }
+    .community{
+        position:relative;
+        bottom:auto;
+        top:-1220px;
+        right:-300px;
+        width:250px;
+        height:350px;
+        line-height:25px;
+    }
+    .group-coaching{
+        position:relative;
+        bottom:0;
+        top:-1220px;
+        left:360px;
+    }
+    .focusedsession{
+        position:relative;
+        bottom:auto;
+        top:-1200px;
+        left:300px;
+        width:250px;
+        height:399px;
+        line-height:25px;
+    }
+    .workshops{
+        position:relative;
+        bottom:0;
+        top:-2100px;
+        left:630px;
+    }
+    .interactive{
+        Width:250px;
+        height:400px;
+        position:relative;
+        bottom:0;
+        top:-2100px;
+        left:610px;
+        line-height:25px;
+    }
+    .onlineCourses{
+        position:relative;
+        bottom:0;
+        top:-2580px;
+        left:980px;
+        
+    }
+    .flexiblelearning{
+        Width:250px;
+        height:350px;
+        position:relative;
+        bottom:0;
+        top:-2585px;
+        left:920px;
+        line-height:25px;
+    }
+    #personalized{
+        background-color:#4CA7C0;
+        width:135px;
+        padding:40px;
+        border-radius:10px;
+        position:relative;
+        left:20px;
+        top:41px;
+        text-align:center;
+    }
+    #proven{
+        position:relative;
+       bottom:auto;
+       top:-72px;
+       left:auto;
+       right:-270px; 
+       width:130px; 
+    }
+    #supportive {
+        position:relative;
+        top:-187px;
+        bottom:auto;
+        left:523px;
+        width:135px;
+        padding:41px;
+    }
+    #flexible{
+        position:relative;
+        position:relative;
+        top:-300px;
+        bottom:auto;
+        left:765px;
+        width:130px;
+        padding:47px;
+    }
+
+    #firststep {
+        background-color: #D9526F;
+        padding:40px;
+        line-height:30px;
+        color:#ffffff;
+        position:relative;
+        z-index:2; 
+    }
+
+    #firststep h2{
+        position:relative;
+        bottom:10px;
+        text-align:left;
+    }
+    #firststep p{
+        text-align:left;
+        max-width:550px;
+    }
+     #button{
+        background-color:#ffffff;
+        padding:10px 70px 10px 70px;
+        position:relative;
+        left:630px;
+        top:-100px;
+        border-radius:10px;
+        font-weight:bold; 
+        box-shadow: 3px 3px;
+        border-color: #ffffff; 
+     }
+     table {
+        padding:90px 50px;
+        margin:20px;
+        position:relative;
+        left:120px;
+     }
+     table, th, td{
+        border:1px solid;
+        border-color:#E9BB57;   
+     }
+     .table1{
+        position:relative;
+        left:auto;
+        right:-30px;
+        top:10px;
+    }
+    .table2{
+        position:relative;
+        right:-330px;
+        left:auto;
+        bottom:203px;
+        
+    }
+    .table3{
+        position:relative;
+        left:auto;
+        right:-600px;
+        bottom:380px;
+    }
+    .table4{
+        position:relative;
+        right:-880px;
+        left:auto;
+        bottom:555px;  
+    }
+     
+     #copyright{
+        position:relative;
+        right:200px;
+     }
+     #terms{
+        position:relative;
+        left:200px;
+     }
+}
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width:1280px) {
+   
+body{
+    max-width:1300px;
+}
+    #topnav li{
+        background-color:#E9BB57;
+        text-transform:uppercase;
+        font-weight:bold;
+        color:#1E1E1E;
+        margin:-10px;
+        border-radius:7px;
+        padding:15px;
+        font-size:1em;
+        display:inline;
+        position:relative;
+        bottom:215px;
+        left:auto;
+        right:-720px;
+        }
+        .menu{
+            visibility:hidden;
+        }
+        .personaldevelopment{
+            position:relative;
+            line-height:22px;
+        }
+        .careercoaching{
+            position:relative;
+            top:15px;
+            left:0px;
+            height:300px;
+        }
+        .relationshipC{
+        Width:250px;
+        height:350px;
+        position:relative;
+        bottom:0;
+        top:25px;
+        line-height:23px;
+        }
+        .community{
+            position:relative;
+            bottom:auto;
+            top:-1190px;
+            right:-300px;
+            width:250px;
+            height:300px;
+            line-height:23px;
+        }
+        .group-coaching{
+            position:relative;
+            bottom:0;
+            top:-1190px;
+            left:360px;
+        }
+        .focusedsession{
+            position:relative;
+            bottom:auto;
+            top:-1170px;
+            left:300px;
+            width:250px;
+            height:350px;
+            line-height:23px;
+        }
+        .workshops{
+            position:relative;
+            bottom:0;
+            top:-1970px;
+            left:630px;
+        }
+        .interactive{
+            Width:250px;
+            height:360px;
+            position:relative;
+            bottom:0;
+            top:-1970px;
+            left:610px;
+            line-height:23px;
+        }
+        .onlineCourses{
+            position:relative;
+            bottom:0;
+            top:-2410px;
+            left:980px;  
+        }
+        .flexiblelearning{
+            Width:250px;
+            height:320px;
+            position:relative;
+            bottom:0;
+            top:-2410px;
+            left:920px;
+            line-height:23px;
+        }
+        #personalized{
+            background-color:#4CA7C0;
+            width:200px;
+            padding:50px;
+            border-radius:10px;
+            position:relative;
+            left:20px;
+            top:43px;
+            text-align:center;
+        }
+        #proven{
+            position:relative;
+           bottom:auto;
+           top:-72px;
+           left:auto;
+           right:-350px; 
+           width:200px;
+           
+        }
+        #supportive {
+            position:relative;
+            top:-187px;
+            bottom:auto;
+            left:670px;
+            width:200px;
+            padding:49px;
+        }
+        #flexible{
+            position:relative;
+            position:relative;
+            top:-300px;
+            bottom:auto;
+            left:995px;
+            width:200px;
+            padding:47px;
+        }
+        #firststep {
+            background-color: #D9526F;
+            padding:40px;
+            line-height:30px;
+            color:#ffffff;
+            position:relative;
+            z-index:2; 
+        }
+        #firststep h2{
+            position:relative;
+            bottom:10px;
+            text-align:left;
+        }
+        #firststep p{
+            text-align:left;
+            max-width:550px;
+        }
+         #button{
+            background-color:#ffffff;
+            padding:10px 70px 10px 70px;
+            position:relative;
+            left:630px;
+            top:-100px;
+            border-radius:10px;
+            font-weight:bold; 
+            box-shadow: 3px 3px;
+            border-color: #ffffff; 
+         }
+         table {
+            padding:90px 50px;
+            margin:20px;
+            position:relative;
+            left:120px;
+         }
+         #button{
+            background-color:#ffffff;
+            padding:10px 70px 10px 70px;
+            position:relative;
+            left:700px;
+            top:-100px;
+            border-radius:10px;
+            font-weight:bold; 
+            box-shadow: 3px 3px;
+            border-color: #ffffff; 
+            width:350px;
+        }
+            #firststep p{ 
+                text-align:left;
+                max-width:650px;
+            }     
+}
